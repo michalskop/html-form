@@ -3,7 +3,7 @@
   <div class="ui-field-contain fieldcontain">
   <legend>{$data['legend']}</legend>
   {foreach $data.children as $input}
-    {if is_array($input.children)}
+    {if (isset($input.children)) and (is_array($input.children))}
       {recursion data=$input level=$level+1}
     {else}
       {* this does not work for me: https://github.com/fulopattila122/smarty3-include-if-exists *}

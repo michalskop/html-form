@@ -1,6 +1,6 @@
 <!-- checkbox input {$input.id}-->
 {if isset($input)}
-{if is_array($input.checkbox[0])}
+{if ((isset($input.checkbox[0])) and (is_array($input.checkbox[0])))}
 <fieldset{if $data.jqm} data-role="controlgroup"{/if}{if ($input.horizontal)} data-type="horizontal"{/if}>
 {if isset($input.legend)}
 <legend>{$input.legend}</legend>
