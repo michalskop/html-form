@@ -8,7 +8,7 @@
     {else}
       {* this does not work for me: https://github.com/fulopattila122/smarty3-include-if-exists *}
       {* {include_if_exists file="input_type/`$input.type`.tpl"} *}
-      {if in_array($input.type, array('text','search','password','textarea','color','url', 'number','select','radio','checkbox','flip','submit','file','button'))}
+      {if in_array($input.type, array('text','search','password','textarea','color','url', 'number','select','radio','checkbox','flip','submit','file','button','hidden'))}
         {include file="input_type/`$input.type`.tpl"}
       {/if}
     {/if}
