@@ -7,6 +7,7 @@ $smarty->setTemplateDir('./smarty/templates');
 $smarty->setCompileDir('./smarty/templates_c');
 
 //$smarty->error_reporting = E_ALL & ~E_NOTICE;
+error_reporting(E_ALL);
 
 if (isset($_GET['formjson'])) {
   $formobj = json_decode(file_get_contents($_GET['formjson']));

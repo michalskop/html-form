@@ -3,6 +3,6 @@
 {if isset($input.label)}
 <label for="{$input.id}">{$input.label}</label>
 {/if}
-<button name="{$input.id}" id="{$input.id}"{if $data.jqm} class="ui-shadow ui-btn ui-corner-all"{/if} type="submit">{$input.html}</button>
+<input name="{$input.id}" id="{$input.id}"{if $data.jqm} class="ui-shadow ui-btn ui-corner-all"{/if} type="submit" value="{$input.value}" />
 {/if}
 <!-- /submit input {$input.id}-->

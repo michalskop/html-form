@@ -124,7 +124,7 @@
       "id": "Id10",
       "label": "Submit",
       "value": "Submit",
-      "type": "button"
+      "type": "submit"
     }
   ]
 
